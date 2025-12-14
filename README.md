@@ -1,1 +1,1 @@
-"# ranSlice-team" 
+# ranSlice-team

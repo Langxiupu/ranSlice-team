@@ -1,0 +1,6 @@
+network,geoname_id,registered_country_geoname_id,represented_country_geoname_id,is_anonymous_proxy,is_satellite_provider,postal_code,latitude,longitude,accuracy_radius,is_anycast
+208.114.80.0/23,4537123.0,6252001.0,,0,0,74434,35.7944,-95.2257,10.0,
+24.112.117.0/24,4537123.0,6252001.0,,0,0,74434,35.7944,-95.2257,10.0,
+72.196.63.128/27,4543280.0,6252001.0,,0,0,74948,35.4017,-94.6307,100.0,
+212.178.228.0/22,4550374.0,6252001.0,,0,0,74955,35.4978,-94.7814,20.0,
+

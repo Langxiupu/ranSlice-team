@@ -1,0 +1,39 @@
+{
+  "visibles_t_u": "sat-data/filtered_visibles_t_u-46users.pkl",
+  "ue_position": "data/random_users46.csv",
+  "traffic_wide": "sat-data/random-wide-13pm.pkl",
+  "sats_bd_rbs": "sat-data/sats-bd-rb.csv",
+  "apps_weights": "sat-data/apps-weights-46.csv",
+  "app_flow_types": "sat-data/app_flow_types.csv",
+  "slice_slots": 1000,
+  "common_sats": [
+    1143,
+    1644,
+    1666,
+    3743
+  ],
+  "short_slot_interval": 0.01,
+  "lambda": 0.5,
+  "slice_interval": 0.1,
+  "schedulers": [
+    {
+      "policy": "RR",
+      "params": {
+        "__tuple__": true,
+        "values": [
+          20000000.0,
+          15000.0
+        ]
+      }
+    }
+  ],
+  "flow_gen_method": {
+    "type": "on-off",
+    "params": {
+      "__tuple__": true,
+      "values": [
+        0.5
+      ]
+    }
+  }
+}

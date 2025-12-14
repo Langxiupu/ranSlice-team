@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Dreamer Debug (test)",  // 调试配置名称（自定义，方便识别）
+            "type": "debugpy",                           // 调试类型（固定为 python）
+            "request": "launch",                        // 调试模式（launch=启动脚本调试）
+            // 关键：替换为你的 dreamer.py 绝对路径（Windows 用 \\ 分隔路径，Linux/Mac 用 /）
+            "program": "${workspaceFolder}/dreamer.py",  // 示例：Linux/Mac 路径
+            // "program": "C:\\Users\\YourName\\YourProject\\dreamer.py",  // 示例：Windows 路径
+            // 关键：命令行参数（严格对应 --configs --task --logdir，每个参数单独一行）
+            "args": [
+                "--configs", "ranSlice",              // 对应 --configs dmc_vision
+                "--task", "ranSlice_task",            // 对应 --task dmc_walker_walk
+                "--logdir", "${workspaceFolder}/logdir/test"  // 用 workspaceFolder 表示项目根目录
+            ],
+            // 可选：在 VS Code 集成终端显示脚本输出（方便看日志）
+            "console": "integratedTerminal",
+            // 可选：调试时自动停止在第一行（新手推荐开启，熟悉后可关闭）
+            "stopOnEntry": false,
+            // 可选：添加环境变量（如需要指定 CUDA 设备，可加 "env": {"CUDA_VISIBLE_DEVICES": "0"}）
+            "env": {},
+            "python": "/home/ps/miniconda3/envs/dreamer/bin/python"
+        }
+    ]
+}
